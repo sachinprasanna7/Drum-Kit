@@ -1,6 +1,6 @@
 
-for(var i = 0; i < document.querySelectorAll(".drum").length ; i++){
-    document.querySelectorAll(".drum")[i].addEventListener("click", function(){
+for(var i = 0; i < document.querySelectorAll(".music").length ; i++){
+    document.querySelectorAll(".music")[i].addEventListener("click", function(){
         var buttonInnerHTML = this.innerHTML;
         makeSound(buttonInnerHTML);
         buttonAnimation(buttonInnerHTML);
@@ -60,3 +60,53 @@ function buttonAnimation(currentKey){
         activeButton.classList.remove("pressed");
     }, 100);
 }
+
+
+// Burry Banna Knock
+
+document.querySelector(".banna").addEventListener("click", function(){
+    makeSound("j");
+    setTimeout(function(){
+        makeSound("j");
+    }, 350);
+});
+
+// Lovesick Knock
+
+document.querySelector(".lovesick").addEventListener("click", function(){
+    makeSound("w");
+    setTimeout(function(){
+        makeSound("w");
+
+    }, 200);
+
+    setTimeout(function(){
+        makeSound("w");
+    }, 400);
+});
+
+// Suga Knock
+
+document.querySelector(".suga").addEventListener("click", function(){
+    makeSound("a");
+    setTimeout(function(){
+        makeSound("a");
+
+    }, 500);
+    setTimeout(function(){
+        makeSound("a");
+    }, 700);
+
+    setTimeout(function(){
+        makeSound("a");
+    }, 900);
+
+    setTimeout(function(){
+        makeSound("a");
+    }, 1500);
+
+    setTimeout(function(){
+        makeSound("a");
+    }, 1800);
+});
+
